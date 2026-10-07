@@ -1,4 +1,5 @@
 /* Use a container class to avoid style collisions with JupyterLab */
+
 .jupytutor {
   background-color: rgba(128, 128, 128, 0.04);
   border: 2px solid var(--jp-border-color0);
@@ -12,6 +13,7 @@
 
 /* A compact reactivation affordance shown after a qualifying cell when a
    student has paused proactive prompts for this notebook. */
+
 .jp-jupytutor-reactivation-control {
   display: flex;
   justify-content: flex-end;
@@ -41,11 +43,13 @@
 }
 
 /* Loading state for the entire jupytutor container */
+
 .jupytutor.loading {
   animation: subtleGlow 3s ease-in-out infinite;
 }
 
 /* Subtle glow animation for the container */
+
 @keyframes subtleGlow {
   0%,
   100% {
@@ -63,6 +67,7 @@
 
 .jupytutor button {
   /* Use JupyterLab's themed button style for a native look and feel */
+  
   background-color: var(--jp-brand-color1);
   color: white;
   border: none;
@@ -114,11 +119,13 @@
 }
 
 /* Subtle border color change on hover for better integration */
+
 .tailoredOptionsContainer:hover {
   border-left-color: var(--jp-border-color1);
 }
 
 /* Loading state for suggestions */
+
 .tailoredOptionsContainer.loading {
   animation: suggestionsPulse 2s ease-in-out infinite;
   opacity: 0.5;
@@ -213,6 +220,7 @@
 }
 
 /* Chat Bubble Styles */
+
 .chat-container {
   display: flex;
   flex-direction: column;
@@ -226,6 +234,7 @@
   scrollbar-width: thin;
   scrollbar-color: var(--jp-border-color0) transparent;
   /* Smooth scrolling */
+  
   scroll-behavior: smooth;
 }
 
@@ -326,6 +335,7 @@
 }
 
 /* Chat Bubble Animation */
+
 .chat-bubble {
   opacity: 0;
   transform: translateY(20px);
@@ -340,6 +350,7 @@
 }
 
 /* Assistant Message Styles */
+
 .assistant-message {
   opacity: 0;
   transform: translateY(20px);
@@ -475,6 +486,7 @@
 }
 
 /* ReactMarkdown Content Styles */
+
 .assistant-message h1,
 .assistant-message h2,
 .assistant-message h3,
@@ -567,6 +579,7 @@
 }
 
 /* Stagger animation for multiple chat bubbles */
+
 .chat-container .chat-bubble:nth-child(1) {
   transition-delay: 0.1s;
 }
@@ -584,11 +597,13 @@
 }
 
 /* Remove bottom margin from last message to eliminate bottom padding */
+
 .chat-container .chat-message-wrapper:last-child {
   margin-bottom: 0;
 }
 
 /* Chat Input Styles */
+
 .chat-input-container {
   display: flex;
   align-items: center;
@@ -675,6 +690,7 @@
 }
 
 /* Streaming Message Wrapper */
+
 .streaming-message {
   display: flex;
   flex-direction: column;
@@ -683,6 +699,7 @@
 }
 
 /* Streaming Indicator */
+
 .streaming-indicator {
   display: flex;
   align-items: center;
@@ -690,6 +707,7 @@
 }
 
 /* Typing Dots Animation */
+
 .typing-dots {
   display: flex;
   gap: 4px;
@@ -732,12 +750,14 @@
 }
 
 /* Loading State Styles */
+
 .chat-submit-btn.loading {
   background-color: var(--jp-brand-color1);
   pointer-events: none;
 }
 
 /* Enhanced loading animations for the entire input container */
+
 .chat-input-container.loading {
   animation: containerPulse 2s ease-in-out infinite;
   position: relative;
@@ -762,6 +782,7 @@
 }
 
 /* Loading state for the input field */
+
 .chat-input.loading {
   border-color: var(--jp-brand-color1);
   animation: inputPulse 2s ease-in-out infinite;
@@ -769,6 +790,7 @@
 }
 
 /* Loading state for placeholder text */
+
 .chat-input.loading::placeholder {
   animation: textPulse 1.5s ease-in-out infinite;
   font-style: italic;
@@ -776,6 +798,7 @@
 }
 
 /* Container pulse animation */
+
 @keyframes containerPulse {
   0%,
   100% {
@@ -789,6 +812,7 @@
 }
 
 /* Light sweep animation */
+
 @keyframes lightSweep {
   0% {
     left: -100%;
@@ -802,6 +826,7 @@
 }
 
 /* Input field pulse animation */
+
 @keyframes inputPulse {
   0%,
   100% {
@@ -815,6 +840,7 @@
 }
 
 /* Text pulse animation */
+
 @keyframes textPulse {
   0%,
   100% {
