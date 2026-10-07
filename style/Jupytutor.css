@@ -854,6 +854,7 @@
 }
 
 /* Responsive adjustments */
+
 @media (width <= 768px) {
   .chat-input-container {
     gap: 6px;
